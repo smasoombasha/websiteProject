@@ -2,14 +2,15 @@ html, *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
-
+  font-family: 'Poppins', sans-serif;  
+}
+body{ 
+  background: url("images/wallpaperflare.com_wallpaper.jpg") no-repeat;
+ 
 }
 header{
   height: 100vh;
-  width: 100%;
-  background: url("images/wallpaperflare.com_wallpaper.jpg") no-repeat;
-  background-position: center;
+  width: 100%;background-position: center;
 
 }
 header nav{
@@ -20,7 +21,7 @@ header nav{
 }
 nav .navbar{
   width: 90%;
-  margin: auto auto 20px auto;
+  margin: auto auto 20px auto; 
   justify-content: space-between;
   display: flex;
 align-items: center;
@@ -45,16 +46,16 @@ nav .navbar .logo{
 }
 .menu li a{
   text-decoration: none;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 500;
   color: #fff;
 }
 .menu li a:hover{
-  padding: 5px 7px;
+  padding: 7px 9px;
   color: #fff; 
-  border-radius: 7px;
-  border: 2px solid #2c3e50;
-  background-color: #16213E;
+  border-radius: 7px; 
+  text-decoration: underline;
+  text-decoration-color: #16213E;
 }
 .searchbox {
   position: relative;
@@ -130,36 +131,91 @@ nav .navbar .logo{
     width: 0ch;
   }
   
+} 
+.button .btn{ 
+  margin-top: 10px;
+  margin-left: -10px;
+}
+.button .btn a{ 
+  color: #fff;
+  text-decoration: none;
+  border: 1px solid #fff;
+  padding: 7px 9px;
+  border-radius: 5px;
+} 
+.button .btn1 a{
+  background: #16213E;
+  border: 1px solid #16213E;
+  padding: 8px 9px;
+}
+.button .btn1 a:hover{
+  background: transparent;
+  border: 1px solid #fff;
+ }
+  
+.button .btn2 a:hover{
+  border: 1px solid #16213E;
+  background: #16213E;
 }
 
-.footer{
+footer .textt{
   position: absolute;
   top: 95%;  
-  height: 5vh; 
-  text-align: center; 
-  justify-content: center;
-  justify-items: center;
+  height: 5vh;   
+  margin: 0 0 0 700px;
 }
-.footer p{
-  white-space: nowrap;  
-  margin: auto auto auto 300%;
-  text-align: center;
-  justify-items: center;
+footer p{
+  white-space: nowrap;    
   color: #fff;
 }
-
-
-
-@media screen and (max-width:450px) {
-  header{
-    height: 100vh;
-    width: 100%;
-    background: url("images/mobile background.jpg") no-repeat;
-    background-position: center;
-  
-  }
-  nav .navbar{ 
-    justify-content: center; 
-  }
-  
+footer p:hover{
+  color: #fff;
+  text-decoration: underline;
+  cursor: pointer;
 }
+
+
+@media (min-width : 760px) and (max-width:1000px){
+  nav .navbar{ 
+    justify-content: center;
+  }
+  .content{
+    top: 60%; 
+  } 
+  footer .textt{   
+    margin: 60px 0;
+    margin: 0 0 0 320px;
+  }
+}
+
+@media (min-width:500px) and (max-width : 760px){
+  nav .navbar{ 
+    justify-content: center;
+  }
+  .content{
+    top: 70%; 
+  }  
+  footer .textt{   
+    position: static;
+    margin: 30% 0 0 150px;
+  }
+ header nav{
+  position: static;
+ }
+ .content .text{
+  font-size: 20px;
+ }
+ .content .name{
+  font-size: 45px;
+  margin-top:20px ;
+  margin-bottom: 5px;
+ }
+ .content .job{
+  font-size: 30px;
+ }
+ .content .job .typing{
+  font-weight: 550;    
+  font-size: 30px;
+}
+}
+
