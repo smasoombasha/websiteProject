@@ -188,7 +188,7 @@ footer p:hover{
   }
 }
 
-@media (min-width:500px) and (max-width : 760px){
+@media (min-width:400px) and (max-width : 760px){
   nav .navbar{ 
     justify-content: center;
   }
