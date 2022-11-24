@@ -237,4 +237,28 @@ footer p:hover{
 .searchbox { 
   bottom: 30px; }
 }
+.development{
+  font-size: 25px; 
+  color: #fff;
+  padding-bottom: 10%;  
+}
+.development .head{
+  display: flex;
+}
+.development .head .dots{ 
+  animation: typings 2s steps(15) infinite;   
+  overflow: hidden;
+  white-space: nowrap;
+}
+@keyframes typings{
+  0%{
+    width: 0ch;
+  }
+  50%{
+    width: 17ch;
+  }
+  100%{
+    width: 0ch;
+  }
+}
 
